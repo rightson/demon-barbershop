@@ -19,8 +19,10 @@ void scheduleRandomEvents(bool random = true) {
     }
 }
 
-int main() {
-    scheduleRandomEvents(false);
+int main(int argc, char* argv[]) {
+    bool random = true;
+    if (argc == 2) random = atoi(argv[1]);
+    scheduleRandomEvents(random);
     barberShop.run();
     return 0;
 }
