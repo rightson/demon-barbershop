@@ -6,7 +6,7 @@ OBJECTS = $(SOURCES:.cpp=.o)
 LIBS =
 EXECUTABLE = barbershop
 DOCS = docs
-DOXYGEN_CONF = doxygen
+DOXYGEN_CONF = $(DOCS).doxygen
 
 all: $(EXECUTABLE)
 
